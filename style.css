@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Montserrat&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+body:not(code){
+/*    font-family: Montserrat;*/
+    font-family: Domine;
+}
+body{
+    font-size:1.2rem;
+}
+header{
+    font-size:3rem;
+    padding: 3rem 0;
+    font-family: Montserrat;
+}
+p{
+    padding: 3rem 0;
+}
+ol,ul{
+    padding: 0 0 0 3rem;
+    font-size: 1rem;
+}
+code{
+    background-color: floralwhite;
+}
+#navbar{
+    display:flex;
+    flex-flow: column;
+    width: 80%;
+    
+}
+#navbar>header{
+    font-size:1.5rem;
+    padding: 3rem 3rem;
+}
+.nav-link{
+    font-size:1rem;
+    padding: 0 3rem;
+    width:100%;
+}
+.container-l{
+    position:fixed;
+    width:25%;
+    height:100%;
+    border-right:solid 1px;
+    overflow: hidden;
+}
+.link-container{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    align-self:center;
+}
+.container-r{
+    position:relative;
+    width:50%;
+    left:30%;
+}
+.main-section{
+    height: 80rem;
+    border-bottom:solid 1px;
+    overflow: hidden;
+}
+
+@media (max-width:100vmin) {
+    #navbar{
+    flex-flow: row;
+    width: 100%;
+    align-items: center;
+}
+    .container-r{
+    width:80%;
+    padding:3rem;
+    left:0;
+}
+    header{
+    font-size:3rem;
+    padding: 12rem 0 0 0;
+}    
+    .container-l{
+    position:fixed;
+    width:100%;
+    height:10rem;
+    border-right:none;
+    border-bottom:solid 1px;
+    z-index: 1;
+    background-color: #fff;
+/*    padding-left: 5%;*/
+}
+    .main-section{
+    height:70rem;
+
+}
+    .nav-link{
+    padding: 0 0;
+    width:20rem;
+}
+
+}
